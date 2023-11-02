@@ -15,12 +15,8 @@ def playerChoice():
             break
 
 def reset():
-    global player
-    for i in range(3):
-        for j in range(3):
-                choice[i][j]["text"]=" "
-                choice[i][j]["state"]=NORMAL
-    player=random.choice(['O','X'])
+    # Challenge hard 01: write implementation of reset game
+    pass # remove this line when you implemet your code
 
 def check():                
     for i in range(3):
