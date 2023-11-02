@@ -15,7 +15,8 @@ def playerChoice():
 
 def reset():
     # Challenge hard 01: write implementation of reset game
-    pass # remove this line when you implemet your code
+    root.quit() # remove this line when you implemet your code
+    
 
 def check(): 
     # Challenge medium 02: write pop-up message when game is over before the end of the reset method               
