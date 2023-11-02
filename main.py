@@ -40,7 +40,7 @@ def click(row,col):
 
 root=Tk()
                    
-root.title("Tic-Tac-Toe")
+# Challenge03 easy add title to program window
    
 player=random.choice(['O','X'])     
   
