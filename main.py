@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import messagebox
 import random as random
 
 def button(frame):          
@@ -18,20 +17,18 @@ def reset():
     # Challenge hard 01: write implementation of reset game
     pass # remove this line when you implemet your code
 
-def check():                
+def check(): 
+    # Challenge medium 02: write pop-up message when game is over before the end of the reset method               
     for i in range(3):
             if(choice[i][0]["text"] == choice[i][1]["text"] == choice[i][2]["text"] == player
-               or choice[0][i]["text"] == choice[1][i]["text"] == choice[2][i]["text"] == player):
-                    messagebox.showinfo("Congrats!!","'"+player+"' has won")
+               or choice[0][i]["text"] == choice[1][i]["text"] == choice[2][i]["text"] == player):                   
                     reset()
     if(choice[0][0]["text"] == choice[1][1]["text"] == choice[2][2]["text"] == player
-       or choice[0][2]["text"] == choice[1][1]["text"] == choice[2][0]["text"] == player):
-        messagebox.showinfo("Congrats!!","'"+player+"' has won")
+       or choice[0][2]["text"] == choice[1][1]["text"] == choice[2][0]["text"] == player):  
         reset()   
     elif(choice[0][0]["state"] == choice[0][1]["state"] == choice[0][2]["state"]
          == choice[1][0]["state"] == choice[1][1]["state"] == choice[1][2]["state"]
          == choice[2][0]["state"] == choice[2][1]["state"] == choice[2][2]["state"] == DISABLED):
-        messagebox.showinfo("Tied!!","The match ended in player draw")
         reset()
      
 def click(row,col):
